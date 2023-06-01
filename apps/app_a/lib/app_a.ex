@@ -13,6 +13,10 @@ defmodule AppA do
 
   """
   def hello do
+    _struct = %StructInAppA{}
+
+    StructInAppA.something()
+
     :world
   end
 end
