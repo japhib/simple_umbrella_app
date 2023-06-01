@@ -4,5 +4,8 @@ defmodule AppB do
     some_struct = %StructInAppA{}
 
     IO.inspect(some_struct)
+
+    # runtime dependency
+    AppA.hello()
   end
 end
